@@ -1,0 +1,397 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  font-family: Verdana, sans-serif;
+  margin: 0;
+}
+::-webkit-scrollbar {
+  width: 0;
+}
+
+.nav-container {
+  position: absolute;
+  display: flex;
+  justify-content: space-evenly;
+  width: 80vw;
+  height: 3rem;
+  z-index: 1000;
+  padding: 1rem;
+  margin: 7rem 8rem;
+}
+li {
+  list-style: none;
+}
+header {
+  position: absolute;
+  z-index: 1000;
+  display: flex;
+  justify-content: space-evenly;
+  margin: 20px 200px 0 0;
+}
+.logo {
+  width: 80px;
+  height: 80px;
+  margin: 0 10px 0 200px;
+  opacity: 0.85;
+}
+h1 {
+  position: absolute;
+  display: block;
+  z-index: 1000;
+  font-size: 6.5rem;
+  color: white;
+  text-align: center;
+  font-weight: normal !important;
+  font-family: "Monoton", cursive;
+  margin: 13% 20%;
+  text-shadow: rgb(0 0 0) 6px -1px 5px;
+}
+header h3 {
+  width: 400px;
+  margin: 18px 10px 0 0;
+  font-size: 1.2rem;
+  color: white;
+  text-shadow: rgb(0 0 0) 6px -1px 5px;
+}
+a {
+  font-size: 1.1rem;
+  text-decoration: none;
+  color: white;
+  font-family: "Titillium Web", sans-serif;
+  font-weight: bolder;
+  text-shadow: rgb(0 0 0) 6px -1px 5px;
+}
+a:hover {
+  animation-name: fade;
+  animation-duration: 1s;
+}
+
+.about-section {
+  display: flex;
+  width: 100vw;
+  height: 50vh;
+  justify-content: space-evenly;
+  margin: 0 0 3rem 0;
+}
+.about-college {
+  width: 45vw;
+  margin: 3rem 5rem 2rem 5rem;
+}
+.about-college h3 {
+  font-size: 2rem;
+  padding: 0 0 1rem 0;
+}
+.about-college p {
+  font-size: 1.1rem;
+  padding: 0 0 1rem 0;
+}
+.about-director {
+  width: 30vw;
+  height: 20vw;
+  display: flex;
+  margin: 5rem 5rem 0 5rem;
+  border: 1px solid black;
+}
+.about-director-image h2 {
+  margin: 0.5rem 1rem 0 2rem;
+}
+.about-director img {
+  width: 150px;
+  margin: 1rem 1rem 0 1rem;
+  border: 1px solid;
+}
+.about-director p {
+  width: 150px;
+  margin: 0rem 1rem 0.4rem 0.5rem;
+}
+#director-detail {
+  margin: 2.5rem 1rem 0.4rem 0.5rem;
+}
+
+.cards {
+  display: flex;
+  margin: 8rem 0 5rem 0;
+  justify-content: space-evenly;
+}
+.card {
+  border: 5px solid orange;
+  width: 310px;
+  font-size: 0.9rem;
+  text-align: start;
+  display: flex;
+  flex-direction: column;
+}
+.card img {
+  width: 300px;
+  height: 300px;
+  object-fit: cover;
+}
+.card p {
+  margin: 0 1rem 1rem 1rem;
+}
+.card strong {
+  margin: 1rem;
+}
+.industry {
+  background: black;
+}
+.industry h2 {
+  font-size: 3rem;
+  text-align: center;
+  color: orange;
+  padding: 2rem 0 0 1rem;
+}
+.industry img {
+  border: 5px solid orange;
+  margin: 2rem 3rem 3rem 1rem;
+}
+.industry :nth-child(2) {
+  margin: 0 3rem 3rem 7rem;
+}
+
+footer {
+  background: black;
+  margin: 5rem 3rem 3rem 5rem;
+  display: flex;
+  justify-content: space-evenly;
+}
+footer .links {
+  color: orange;
+  width: 300px;
+  height: 320px;
+}
+footer .links + p {
+  text-align: start;
+  padding: 1rem;
+}
+
+footer .links :nth-child(1) {
+  margin: 2rem 0 0 0;
+}
+
+#link1 p {
+  padding: 1rem;
+}
+#link2 p {
+  padding: 0.8rem;
+}
+#link3 p {
+  padding: 0.8rem;
+}
+
+.copy {
+  text-align: center;
+  padding: 0 0 1rem 0;
+  font-size: 2rem;
+  font-weight: bold;
+  font-family: "Titillium Web", sans-serif;
+}
+.mySlides {
+  display: none;
+}
+
+.slideshow-container {
+  width: 100vw;
+  margin: auto;
+  object-fit: cover;
+}
+
+.dots {
+  position: relative;
+  top: -50px;
+}
+
+.slideshow-container img {
+  opacity: 0.8;
+  width: 100%;
+  height: 100vh;
+}
+.prev,
+.next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  padding: 16px;
+  margin-top: -22px;
+  color: white;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+}
+
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+.prev:hover,
+.next:hover {
+  background-color: rgba(0, 0, 0, 0.8);
+}
+
+.text {
+  color: #f2f2f2;
+  font-size: 15px;
+  padding: 8px 12px;
+  position: absolute;
+  bottom: 8px;
+  width: 100%;
+  text-align: center;
+}
+
+.numbertext {
+  color: #f2f2f2;
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+}
+
+.dot {
+  cursor: pointer;
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  margin: 0 20px 0 20px;
+  padding: 15px;
+  transition: background-color 0.6s ease;
+}
+
+.active,
+.dot:hover {
+  background-color: #717171;
+}
+
+.fade {
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@keyframes fade {
+  from {
+    opacity: 0.4;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@media only screen and (max-width: 1000px) {
+  .prev,
+  .next,
+  .text {
+    font-size: 11px;
+  }
+  h1 {
+    position: absolute;
+    display: block;
+    z-index: 1000;
+    font-size: 5rem;
+    color: white;
+    text-align: center;
+    font-weight: normal !important;
+    font-family: "Monoton", cursive;
+    margin: 18% 20%;
+    text-shadow: rgb(0 0 0) 6px -1px 5px;
+  }
+
+  .nav-container {
+    position: absolute;
+    display: flex;
+    justify-content: space-evenly;
+    width: 100vw;
+    height: 3rem;
+    z-index: 1000;
+    padding: 1rem;
+    margin: 6.5rem 2rem 7rem 0;
+  }
+  a {
+    font-size: 1rem;
+    text-decoration: none;
+    color: white;
+    font-weight: 500;
+    padding: 1rem;
+  }
+  .slideshow-container img {
+    width: 100%;
+    height: initial;
+  }
+  .about-director {
+    width: 50vw;
+    height: 40vw;
+    display: flex;
+    margin: 5rem 3rem 0 2rem;
+    border: 1px solid black;
+  }
+  .about-director-image h2 {
+    margin: 3rem 0.5rem 0 2rem;
+  }
+
+  .about-director img {
+    width: 150px;
+    margin: 1rem 1rem 0 1rem;
+    border: 1px solid;
+  }
+  .about-director p {
+    width: 150px;
+    font-size: 0.9rem;
+    margin: 0rem 1rem 0.4rem 0.5rem;
+  }
+  #director-detail {
+    margin: 6rem 1rem 0.4rem 0.5rem;
+  }
+  .about-college {
+    width: 50vw;
+    margin: 3rem 3rem 2rem 5rem;
+  }
+  .about-college h3 {
+    font-size: 2rem;
+    padding: 0 0 1rem 0;
+  }
+  .about-college p {
+    font-size: 1.1rem;
+    padding: 0 0 1rem 0;
+  }
+  .cards {
+    display: flex;
+    margin: 1rem 0 5rem 0;
+    justify-content: space-evenly;
+  }
+  .about-section {
+    display: flex;
+    width: 100vw;
+    height: 30vh;
+    justify-content: space-evenly;
+    margin: 0 0 3rem 0;
+  }
+  .industry img {
+    width: 150px;
+    border: 5px solid orange;
+    margin: 2rem 3rem 3rem 1rem;
+  }
+
+  .industry :nth-child(2) {
+    margin: 0 3rem 3rem 5rem;
+  }
+
+  footer .links {
+    color: orange;
+    width: 300px;
+    height: 320px;
+    padding: 0 6px;
+    margin: 0 2rem 0 0;
+  }
+
+  footer .links :nth-child(1) {
+    margin: 1rem 0 0 0;
+  }
+}
