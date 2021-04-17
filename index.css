@@ -408,4 +408,9 @@ footer .links :nth-child(1) {
   footer .links :nth-child(1) {
     margin: 1rem 0 0 0;
   }
+  
+  .prev,
+  .next {
+    top: 18%;
+  }
 }
