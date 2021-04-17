@@ -28,3 +28,15 @@ function showSlides(n) {
   slides[slideIndex - 1].style.display = "block";
   dots[slideIndex - 1].className += " active";
 }
+
+let time = Date.now();
+function animate() {
+  let timenow = Date.now();
+  if (timenow - time > 3000) {
+    showSlides((slideIndex += 1));
+    time = Date.now();
+  }
+  requestAnimationFrame(animate);
+}
+
+animate();
